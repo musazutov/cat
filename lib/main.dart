@@ -8,7 +8,6 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initDI();
   runApp(const MyApp());
-
 }
 
 class MyApp extends StatelessWidget {
@@ -27,4 +26,5 @@ class MyApp extends StatelessWidget {
       initialRoute: Pages.cat,
     );
   }
+  //master 11 solindi asagi master 12
 }
