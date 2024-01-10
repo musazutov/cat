@@ -7,7 +7,7 @@ import 'features/cat/domain/usecases/cat.dart';
 import 'features/cat/presentation/bloc/cat_cubit.dart';
 
 final sl = GetIt.instance;
-//dev 21 message
+//dev 41 message
 Future<void> initDI() async {
   /// Bloc
   sl.registerFactory(() => CatCubit(sl()));
