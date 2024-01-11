@@ -8,10 +8,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initDI();
   runApp(const MyApp());
+  //yeni note master 53
 }
 
 class MyApp extends StatelessWidget {
-
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -25,5 +25,4 @@ class MyApp extends StatelessWidget {
       initialRoute: Pages.cat,
     );
   }
-  //master in 42
 }
