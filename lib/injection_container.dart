@@ -23,7 +23,7 @@ final sl = GetIt.instance;
   sl.registerLazySingleton<CatRemoteDataSource>(
     () => CatRemoteDataSourceImpl(client: sl()),
   );
-//dev 52 message
+//dev 63 message
   /// Core
   sl.registerLazySingleton(() =>
       Dio(BaseOptions(baseUrl: 'https://cat-fact.herokuapp.com')));
