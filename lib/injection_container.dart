@@ -7,8 +7,7 @@ import 'features/cat/domain/usecases/cat.dart';
 import 'features/cat/presentation/bloc/cat_cubit.dart';
 
 final sl = GetIt.instance;
-//dev 41 message
-Future<void> initDI() async {
+ Future<void> initDI() async {
   /// Bloc
   sl.registerFactory(() => CatCubit(sl()));
 
@@ -24,7 +23,7 @@ Future<void> initDI() async {
   sl.registerLazySingleton<CatRemoteDataSource>(
     () => CatRemoteDataSourceImpl(client: sl()),
   );
-
+//dev 52 message
   /// Core
   sl.registerLazySingleton(() =>
       Dio(BaseOptions(baseUrl: 'https://cat-fact.herokuapp.com')));
